@@ -49,6 +49,7 @@ a:hover {
 .header__cv {
   border: 1px solid #C72B6C;
   padding: 10px;
+  font-weight: 700;
 }
 
 .header__cv:hover {
