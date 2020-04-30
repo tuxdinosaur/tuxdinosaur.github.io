@@ -6,6 +6,11 @@ a {
   color: #C72B6C;
 }
 
+a:hover {
+  color: #363636;
+  text-decoration: none;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -39,6 +44,25 @@ a {
 
 .header__description--nuvo {
   color: #363636;
+}
+
+.header__cv {
+  border: 1px solid #C72B6C;
+  padding: 10px;
+}
+
+.header__cv:hover {
+  border: 1px solid #C72B6C;
+  background: #C72B6C;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* CONTACT */
+
+.contact__icon {
+  height: 32px;
 }
 
 .projects-title {
