@@ -2,6 +2,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+a {
+  color: #C72B6C;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -35,6 +39,22 @@ body {
 
 .header__description--nuvo {
   color: #363636;
+}
+
+.projects-title {
+  font-weight: 700;
+}
+
+/* CARDS */
+
+.card-image img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.project-name {
+  font-size: 18px;
+  font-weight: 700;
 }
 
 @media only screen and (min-width: 768px) {
