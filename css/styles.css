@@ -28,7 +28,7 @@ a:hover {
 
 .header__img {
   width: 50%;
-  max-width: 325px;
+  max-width: 250px;
   border-radius: 50%;
 }
 
@@ -45,6 +45,7 @@ a:hover {
 
 .header__description--nuvo {
   color: #363636;
+  max-width: 850px;
 }
 
 .header__cv {
@@ -82,6 +83,11 @@ a:hover {
 
 /* CARDS */
 
+.card {
+  border-radius: 0;
+  border: none;
+}
+
 .card-image img {
   width: 100%;
   object-fit: contain;
@@ -93,6 +99,9 @@ a:hover {
 }
 
 @media only screen and (min-width: 768px) {
+  .header__title {
+    font-size: 42px;
+  }
   .header__description--nuvo {
     font-size: 18px;
   }
