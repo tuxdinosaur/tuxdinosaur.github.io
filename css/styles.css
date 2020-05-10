@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   background: #F7F7F7;
@@ -26,9 +30,13 @@ a:hover {
   color: #363636;
 }
 
+.header__title--span {
+  display: block;
+}
+
 .header__img {
   width: 50%;
-  max-width: 250px;
+  max-width: 225px;
   border-radius: 50%;
 }
 
@@ -40,7 +48,7 @@ a:hover {
 .header__description--magenta {
   color: #C72B6C;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .header__description--nuvo {
@@ -98,9 +106,23 @@ a:hover {
   font-weight: 700;
 }
 
+@media only screen and (min-height: 768px) {
+
+  .header {
+    height: 100vh;
+  }
+}
+
 @media only screen and (min-width: 768px) {
+  
   .header__title {
     font-size: 42px;
+  }
+  .header__title--span{
+    display: inline;
+  }
+  .header__description--magenta{
+    font-size: 24px;
   }
   .header__description--nuvo {
     font-size: 18px;
