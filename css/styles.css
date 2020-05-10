@@ -134,6 +134,11 @@ a:hover {
   margin: 0 0 16px 0;
 }
 
+.project-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
 @media only screen and (min-height: 768px) {
 
   .header {
