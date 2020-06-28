@@ -1,3 +1,4 @@
+
 html {
   scroll-behavior: smooth;
 }
@@ -9,11 +10,13 @@ body {
 
 a {
   color: #C72B6C;
+  transition: 0.3s ease-out;
 }
 
 a:hover {
-  color: #363636;
+  color: #6b1a3c;
   text-decoration: none;
+  transition: 0.3s ease-out;
 }
 
 .header {
@@ -21,49 +24,58 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 2.5rem 0;
 }
-
 .header__title {
   text-align: center;
   font-weight: 700;
   font-size: 32px;
   color: #363636;
 }
-
 .header__title--span {
   display: block;
 }
-
 .header__img {
   width: 45%;
-  max-width: 225px;
+  max-width: 200px;
   border-radius: 50%;
 }
-
 .header__description {
   font-weight: 500;
   text-align: center;
 }
-
 .header__description--magenta {
   color: #C72B6C;
   font-weight: 700;
   font-size: 22px;
 }
-
 .header__description--nuvo {
   color: #363636;
   max-width: 850px;
 }
-
+.nav__cv {
+  border: 2px solid #C72B6C;
+  padding: 10px 20px;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: 0.3s ease-out;
+  display: none;
+}
+.nav__cv:hover {
+  border: 2px solid #C72B6C;
+  background: #C72B6C;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
 .header__cv {
   border: 2px solid #C72B6C;
   padding: 10px 20px;
   font-weight: 700;
   border-radius: 5px;
   transition: 0.3s ease-out;
+  /* display: none; */
 }
-
 .header__cv:hover {
   border: 2px solid #C72B6C;
   background: #C72B6C;
@@ -80,7 +92,6 @@ a:hover {
   transition: 0.3s ease-out;
   display: inline-block;
 }
-
 .button--magenta:hover {
   border: 2px solid #C72B6C;
   background: #C72B6C;
@@ -92,16 +103,14 @@ a:hover {
 /* CONTACT */
 
 .contact__icon {
-  height: 40px;
-  width: 40px;
+  height: 38px;
+  width: 38px;
   fill: #363636;
   transition: 0.3s ease-out;
 }
-
 .contact__icon:hover {
   fill: #C72B6C;
 }
-
 .projects-title {
   font-weight: 700;
 }
@@ -113,52 +122,55 @@ a:hover {
   border: none;
   background: transparent;
 }
-
 .card-image img {
   width: 100%;
   object-fit: contain;
 }
-
 .card-body {
   padding: 1.25rem 0;
 }
-
 .project-name {
   font-size: 20px;
   font-weight: 700;
   border-left: 5px solid #C72B6C;
   padding: 0 10px;
 }
-
 .project-description {
   margin: 0 0 16px 0;
 }
-
 .project-button {
   display: flex;
   justify-content: flex-end;
 }
 
 @media only screen and (min-height: 768px) {
-
-  .header {
+  /* .header {
     height: 100vh;
-  }
+  } */
 }
 
 @media only screen and (min-width: 768px) {
-  
+  .nav__cv {
+    display: block;
+  }
+  .header__cv {
+    display: none;
+  }
   .header__title {
-    font-size: 42px;
+    font-size: 38px;
   }
   .header__title--span{
     display: inline;
   }
   .header__description--magenta{
-    font-size: 24px;
+    font-size: 22px;
   }
   .header__description--nuvo {
-    font-size: 18px;
+    font-size: 17px;
+  }
+  .contact__icon {
+    height: 38px;
+    width: 38px;
   }
 }
 
