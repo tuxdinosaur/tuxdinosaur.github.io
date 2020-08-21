@@ -4,13 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="tuxdinosaur">
   <link rel="icon" href="./favicon.png">
-  <title>Inicio | NuvoStudio</title>
-
-  <!-- FONTS -->
+  <title>Inicio | tuxdinosaur</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/styles.css">
@@ -18,16 +15,15 @@
 
 <body>
 
-  <!-- CONTENEDOR -->
+  <!-- CONTENEDOR GENERAL -->
   <div class="container">
     <div class="row">
-
       <div class="col-12">
 
         <nav class="d-flex justify-content-start justify-content-md-end align-items-center">
-          <a class="mr-3 nav__item" href="">Inicio</a>
-          <a class="mr-3 nav__item" href="#projects">Proyectos</a>
-          <!-- <a class="mr-0 mr-md-3 nav__item" href="#projects">Contacto</a> -->
+          <a class="mr-2 nav__item" href="">Inicio</a>
+          <a class="mr-2 nav__item" href="#projects">Proyectos</a>
+          <!-- <a class="mr-0 nav__item mr-md-2" href="#contact">Contacto</a> -->
           <a class="nav__cv" href="./assets/docs/ivantux_CV2020.pdf" download>
             Descargar CV
           </a>
@@ -54,12 +50,18 @@
           </a>
 
           <div class="mt-4 d-flex align-items-center justify-content-center">
-            <a href="mailto:ivan.tux@outlook.com" target=”_blank” title="Enviar correo">
+            <!-- <a href="mailto:ivan.tux@outlook.com" target=”_blank” title="Enviar correo">
               <svg class="contact__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path
                   d="M12,2a10,10,0,1,0,5,18.66,1,1,0,1,0-1-1.73A8,8,0,1,1,20,12v.75a1.75,1.75,0,0,1-3.5,0V8.5a1,1,0,0,0-1-1,1,1,0,0,0-1,.79A4.45,4.45,0,0,0,12,7.5,4.5,4.5,0,1,0,15.3,15,3.74,3.74,0,0,0,22,12.75V12A10,10,0,0,0,12,2Zm0,12.5A2.5,2.5,0,1,1,14.5,12,2.5,2.5,0,0,1,12,14.5Z" />
               </svg>
+            </a> -->
+            <a href="mailto:ivan.tux@outlook.com" target=”_blank” title="Enviar correo">
+              <svg class="contact__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M19,4H5A3,3,0,0,0,2,7V17a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V7A3,3,0,0,0,19,4Zm-.41,2-5.88,5.88a1,1,0,0,1-1.42,0L5.41,6ZM20,17a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V7.41l5.88,5.88a3,3,0,0,0,4.24,0L20,7.41Z"/>
+              </svg>
             </a>
+
             <div class="px-5">
               <a href="https://github.com/tuxdinosaur" target=”_blank” title="@tuxdinosaur | GitHub">
                 <svg class="contact__icon" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24">
@@ -80,7 +82,6 @@
         </header>
 
       </div>
-
     </div>
 
     <section class="row pt-4 mb-4" id="projects">
@@ -94,16 +95,33 @@
             <img src="./assets/img/casa-del-comal.jpg" alt="La casa del comal">
           </div>
           <div class="card-body">
+            <div class="d-flex" style="margin-bottom: 15px;">
+              <span style="font-size: 14px; background: #C72B6C; color: #ffffff; padding: 5px; margin-right: 2px;">
+                HTML
+              </span>
+              <span style="font-size: 14px; background: #C72B6C; color: #ffffff; padding: 5px; margin-right: 2px;">
+                CSS
+              </span>
+              <span style="font-size: 14px; background: #C72B6C; color: #ffffff; padding: 5px; margin-right: 2px;">
+                JavaScript
+              </span>
+              <span style="font-size: 14px; background: #C72B6C; color: #ffffff; padding: 5px;">
+                Bootstrap
+              </span>
+            </div>
             <p class="project-name">La casa del comal</p>
             <p class="project-description">
               La Casa del Comal ofrece los platillos más icónicos a través de un concepto atractivo, dinámico y en el
               que todos los bolsillos son bienvenidos.
             </p>
           </div>
-          <div class="card-footer">
+          <div class="card-footer d-flex justify-content-end align-items-center">
             <div class="project-button">
-              <a class="card-link button--magenta" href="https://lacasadelcomal.mx/" target=”_blank”>
+              <a class="card-link d-flex align-items-center" href="https://lacasadelcomal.mx/" target="_blank" style="padding: 5px 10px; font-weight: 600;" title="Ir al sitio">
                 Ver más
+                <svg style="width: 30px; height: 30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path fill="#C72B6C" d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"/>
+                </svg>
               </a>
             </div>
           </div>
@@ -116,6 +134,20 @@
             <img src="./assets/img/fabuloso-fred.jpg" alt="Fabuloso Fred">
           </div>
           <div class="card-body">
+            <div class="d-flex" style="margin-bottom: 15px;">
+              <span style="font-size: 14px; background: #C72B6C; color: #ffffff; padding: 5px; margin-right: 2px;">
+                HTML
+              </span>
+              <span style="font-size: 14px; background: #C72B6C; color: #ffffff; padding: 5px; margin-right: 2px;">
+                CSS
+              </span>
+              <span style="font-size: 14px; background: #C72B6C; color: #ffffff; padding: 5px; margin-right: 2px;">
+                JavaScript
+              </span>
+              <span style="font-size: 14px; background: #C72B6C; color: #ffffff; padding: 5px;">
+                Bootstrap
+              </span>
+            </div>
             <p class="project-name">Fabuloso Fred</p>
             <p class="project-description">
               Proyecto personal. <br />
@@ -124,8 +156,11 @@
           </div>
           <div class="card-footer">
             <div class="project-button">
-              <a class="card-link button--magenta" href="https://mkfuentes.github.io/fred/" target=”_blank”>
+              <a class="card-link d-flex align-items-center" href="https://mkfuentes.github.io/fred/" target="_blank" style="padding: 5px 10px; font-weight: 600;" title="Ir al sitio">
                 Ver más
+                <svg style="width: 30px; height: 30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path fill="#C72B6C" d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"/>
+                </svg>
               </a>
             </div>
           </div>
@@ -138,6 +173,17 @@
             <img src="./assets/img/guia-nms.png" alt="Guía NMS 2020">
           </div>
           <div class="card-body">
+            <div class="d-flex" style="margin-bottom: 15px;">
+              <span style="font-size: 14px; background: #C72B6C; color: #ffffff; padding: 5px; margin-right: 2px;">
+                HTML
+              </span>
+              <span style="font-size: 14px; background: #C72B6C; color: #ffffff; padding: 5px; margin-right: 2px;">
+                CSS
+              </span>
+              <span style="font-size: 14px; background: #C72B6C; color: #ffffff; padding: 5px;">
+                Bootstrap
+              </span>
+            </div>
             <p class="project-name">Guía NMS 2020</p>
             <p class="project-description">
               Proyecto personal.<br />
@@ -146,8 +192,11 @@
           </div>
           <div class="card-footer">
             <div class="project-button">
-              <a class="card-link button--magenta" href="https://tuxdinosaur.github.io/guia-nms-2020/" target=”_blank”>
+              <a class="card-link d-flex align-items-center" href="https://tuxdinosaur.github.io/guia-nms-2020/" target="_blank" style="padding: 5px 10px; font-weight: 600;" title="Ir al sitio">
                 Ver más
+                <svg style="width: 30px; height: 30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path fill="#C72B6C" d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"/>
+                </svg>
               </a>
             </div>
           </div>
@@ -160,10 +209,17 @@
             <img src="./assets/img/comer-en-bola.jpg" alt="Comer en bola">
           </div>
           <div class="card-body">
+            <div class="d-flex" style="margin-bottom: 15px;">
+              <span style="font-size: 14px; background: #C72B6C; color: #ffffff; padding: 5px; margin-right: 2px;">
+                HTML
+              </span>
+              <span style="font-size: 14px; background: #C72B6C; color: #ffffff; padding: 5px; margin-right: 2px;">
+                CSS
+              </span>
+            </div>
             <p class="project-name">Vips | Comer en bola</p>
             <p>
-              Landing de promoción para la marca Vips.<br />
-              Se utilizó HTML y CSS para el desarrollo.
+              Landing de promoción "Comer en bola" para la marca Vips.
             </p>
           </div>
           <div class="card-footer">
@@ -178,10 +234,20 @@
             <img src="./assets/img/clasicos-a-diez.jpg" alt="Clásicos a diez">
           </div>
           <div class="card-body">
+            <div class="d-flex" style="margin-bottom: 15px;">
+              <span style="font-size: 14px; background: #C72B6C; color: #ffffff; padding: 5px; margin-right: 2px;">
+                HTML
+              </span>
+              <span style="font-size: 14px; background: #C72B6C; color: #ffffff; padding: 5px; margin-right: 2px;">
+                CSS
+              </span>
+              <span style="font-size: 14px; background: #C72B6C; color: #ffffff; padding: 5px; margin-right: 2px;">
+                JavaScript
+              </span>
+            </div>
             <p class="project-name">Vips | Clásicos a $10</p>
             <p>
-              Landing de promoción para la marca Vips.<br />
-              Se utilizó HTML, CSS y JS para el desarrollo.
+              Landing de promoción "Clásicos a $10" para la marca Vips.
             </p>
           </div>
           <div class="card-footer">
@@ -196,10 +262,20 @@
             <img src="./assets/img/clasicos-85.png" alt="Clásico con bebida a 85">
           </div>
           <div class="card-body">
+            <div class="d-flex" style="margin-bottom: 15px;">
+              <span style="font-size: 14px; background: #C72B6C; color: #ffffff; padding: 5px; margin-right: 2px;">
+                HTML
+              </span>
+              <span style="font-size: 14px; background: #C72B6C; color: #ffffff; padding: 5px; margin-right: 2px;">
+                CSS
+              </span>
+              <span style="font-size: 14px; background: #C72B6C; color: #ffffff; padding: 5px; margin-right: 2px;">
+                JavaScript
+              </span>
+            </div>
             <p class="project-name">Vips | Clásico con bebida $85</p>
             <p>
-              Landing de promoción para la marca Vips.<br />
-              Se utilizó HTML, CSS y JS para el desarrollo.
+              Landing de promoción para la marca Vips.
             </p>
           </div>
           <div class="card-footer">
@@ -219,16 +295,28 @@
             <img src="./assets/img/rosca-reyes.jpg" alt="Rosca de reyes">
           </div>
           <div class="card-body">
+            <div class="d-flex" style="margin-bottom: 15px;">
+              <span style="font-size: 14px; background: #C72B6C; color: #ffffff; padding: 5px; margin-right: 2px;">
+                HTML
+              </span>
+              <span style="font-size: 14px; background: #C72B6C; color: #ffffff; padding: 5px; margin-right: 2px;">
+                CSS
+              </span>
+              <span style="font-size: 14px; background: #C72B6C; color: #ffffff; padding: 5px; margin-right: 2px;">
+                JavaScript
+              </span>
+            </div>
             <p class="project-name">Vips | Rosca de reyes</p>
             <p>
-              Landing de promoción para la marca Vips.<br />
-              Se utilizó HTML, CSS y JS para el desarrollo.
+              Landing de promoción "Roscar de Reyes" para la marca Vips.<br />
             </p>
           </div>
           <div class="card-footer">
-            <!-- <a class="card-link" href="https://mkfuentes.github.io/fred/" target=”_blank”>
+            <!-- 
+            <a class="card-link" href="https://mkfuentes.github.io/fred/" target=”_blank”>
               Ver más
-            </a> -->
+            </a> 
+            -->
           </div>
         </div>
       </div>
@@ -239,20 +327,39 @@
             <img src="./assets/img/casa-de-jengibre.png" alt="Casa de jengibre">
           </div>
           <div class="card-body">
+            <div class="d-flex" style="margin-bottom: 15px;">
+              <span style="font-size: 14px; background: #C72B6C; color: #ffffff; padding: 5px; margin-right: 2px;">
+                HTML
+              </span>
+              <span style="font-size: 14px; background: #C72B6C; color: #ffffff; padding: 5px; margin-right: 2px;">
+                CSS
+              </span>
+            </div>
             <p class="project-name">Vips | Casa de jengibre</p>
             <p>
-              Landing de promoción para la marca Vips.<br />
-              Se utilizó HTML y CSS para el desarrollo.
+              Landing de promoción "Casa de jengibre" para la marca Vips.<br />
             </p>
           </div>
           <div class="card-footer">
-            <!-- <a class="card-link" href="https://mkfuentes.github.io/fred/" target=”_blank”>
+            <!-- 
+            <a class="card-link" href="https://mkfuentes.github.io/fred/" target=”_blank”>
               Ver más
-            </a> -->
+            </a> 
+            -->
           </div>
         </div>
       </div>
     </section>
+
+    <!-- FOOTER -->
+    <footer class="row">
+      <div class="col-12">
+        <div class="d-flex justify-content-center my-4">
+          Unicons by 
+          <a href="https://iconscout.com/">Iconscout</a>
+        </div>
+      </div>
+    </footer>
 
   </div>
 
