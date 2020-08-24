@@ -23,6 +23,7 @@ body {
   }
 }
 
+/* LINKS */
 a {
   color: #C72B6C;
   transition: 0.25s ease-out;
@@ -33,6 +34,7 @@ a:hover {
   transition: 0.25s ease-out;
 }
 
+/* BUTTONS */
 .button--magenta {
   border: 2px solid #C72B6C;
   padding: 10px 20px;
@@ -74,6 +76,7 @@ nav {
   text-decoration: none;
 }
 
+/* HEADER */
 .header {
   display: flex;
   flex-direction: column;
@@ -122,8 +125,6 @@ nav {
   color: #fff;
   text-decoration: none;
 }
-
-/* CONTACT */
 .contact__icon {
   height: 38px;
   width: 38px;
@@ -132,6 +133,16 @@ nav {
 }
 .contact__icon:hover {
   fill: #C72B6C;
+}
+.arrow-link {
+  fill: #C72B6C;
+  transition: 0.20s ease-out;
+}
+/* .arrow-link:hover {
+  fill: #3F3E4F;
+} */
+.card-link:hover .arrow-link {
+  fill: #3F3E4F;
 }
 
 /* PROJECTS */
