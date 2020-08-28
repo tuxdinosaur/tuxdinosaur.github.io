@@ -1,7 +1,5 @@
 
-html {
-  scroll-behavior: smooth;
-}
+html {scroll-behavior: smooth;}
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -90,9 +88,7 @@ nav {
   font-size: 30px;
   color: #3F3E4F;
 }
-.header__title--span {
-  display: block;
-}
+.header__title--span {display: block;}
 .header__img {
   width: 45%;
   max-width: 200px;
@@ -138,14 +134,11 @@ nav {
   fill: #C72B6C;
   transition: 0.20s ease-out;
 }
-/* .arrow-link:hover {
-  fill: #3F3E4F;
-} */
 .card-link:hover .arrow-link {
   fill: #3F3E4F;
 }
 
-/* PROJECTS */
+/* PROJECT CARDS */
 .projects-title {
   font-size: 28px;
   font-weight: 700;
@@ -154,6 +147,7 @@ nav {
   display: inline-block;
   margin: 0;
 }
+
 .card {
   border-radius: 0;
   border: none;
@@ -166,6 +160,12 @@ nav {
 }
 .card-body {
   padding: 1.25rem;
+}
+.project-tag {
+  font-size: 14px; 
+  background: #C72B6C; 
+  color: #ffffff; 
+  padding: 5px;
 }
 .project-name {
   font-size: 20px;
@@ -185,30 +185,20 @@ nav {
   border-top: none;
 }
 
-@media only screen and (min-height: 768px) {
-  /* .header {height: 100vh;} */
-}
+/* @media only screen and (min-height: 768px) {
+  .header {height: 100vh;}
+} */
 
 @media only screen and (min-width: 768px) {
-  nav {
-    margin-top: 30px;
-  }
-  .nav__cv {
-    display: block;
-  }
-  .header__cv {
-    display: none;
-  }
-  .header__title {
-    font-size: 36px;
-  }
-  .header__title--span{
-    display: inline;
-  }
-  .header__description--magenta {
-    font-size: 20px; 
-  }
-  .header__description--nuvo {
-    font-size: 17px;
-  }
+
+  /* NAVBAR */
+  nav {margin-top: 30px;}
+  .nav__cv {display: block;}
+
+  /* HEADER */
+  .header__cv {display: none;}
+  .header__title {font-size: 36px;}
+  .header__title--span{display: inline;}
+  .header__description--magenta {font-size: 20px;}
+  .header__description--nuvo {font-size: 17px;}
 }
