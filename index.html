@@ -6,16 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="tuxdinosaur">
   <link rel="icon" href="./favicon.png">
-  <title>Inicio | tuxdinosaur</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>tuxdinosaur | Inicio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
 
-  <!-- CONTENEDOR GENERAL -->
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -24,7 +22,7 @@
           <a class="mr-2 nav__item" href="">Inicio</a>
           <a class="mr-2 nav__item" href="#projects">Proyectos</a>
           <!-- <a class="mr-0 nav__item mr-md-2" href="#contact">Contacto</a> -->
-          <a class="nav__cv" href="./assets/docs/ivantux_CV2020.pdf" download>
+          <a class="nav__cv" href="./assets/docs/CV_ivantux.pdf" download>
             Descargar CV
           </a>
           <!-- <a class="mr-2 nav__item" href="#">
@@ -36,7 +34,7 @@
 
         <header class="header">
           <img class="header__img" src="./assets/img/nuvo.png" alt="Nuvo Iván">
-          <h1 class="header__title mt-3 m-0">
+          <h1 class="header__title">
             Hola,
             <span class="header__title--span">soy Iván Tuxtla.</span>
           </h1>
@@ -44,13 +42,20 @@
             Fullstack Developer Jr.
             <span class="d-none">y Beta Mentor en Kodemia.</span>
           </p>
-          <p class="header__description--nuvo m-0">
+          <!-- <p class="header__description--nuvo m-0">
             Cuento con experiencia como Front-End Developer utilizando tecnologías y herramientas como HTML,
             CSS, Bootstrap, JavaScript, Git y Adobe Xd. <br /> <br />
             Gusto por la tecnología, diseño, videojuegos, programación, ciencia ficción y compartir conocimiento.
+          </p> -->
+          <p class="header__description--nuvo-1 m-0">
+            Cuento con experiencia como Front-End Developer utilizando tecnologías y herramientas como HTML,
+            CSS, Bootstrap, JavaScript, Git y Adobe Xd. <br /> <br />
+          </p>
+          <p class="header__description--nuvo-2 m-0">
+            Gusto por la tecnología, diseño, videojuegos, programación, ciencia ficción y compartir conocimiento.
           </p>
 
-          <a class="header__cv" href="./assets/docs/ivantux_CV2020.pdf" download>
+          <a class="header__cv" href="./assets/docs/CV_ivantux.pdf" download>
             Descargar CV
           </a>
 
@@ -91,13 +96,13 @@
         </h2>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-4 mb-3 d-flex">
+      <div class="col-12 col-md-6 mb-3 d-flex">
         <div class="card">
           <div class="card-image">
             <img src="./assets/img/casa-del-comal.jpg" alt="La casa del comal">
           </div>
           <div class="card-body">
-            <div class="d-flex" style="margin-bottom: 15px;">
+            <div class="project-tag-container">
               <span class="project-tag" style="margin-right: 2px;">HTML</span>
               <span class="project-tag" style="margin-right: 2px;">CSS</span>
               <span class="project-tag" style="margin-right: 2px;">JavaScript</span>
@@ -122,7 +127,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-4 mb-3 d-flex">
+      <div class="col-12 col-md-6 mb-3 d-flex">
         <div class="card">
           <div class="card-image">
             <img src="./assets/img/fabuloso-fred.jpg" alt="Fabuloso Fred">
@@ -153,7 +158,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-4 mb-3 d-flex">
+      <div class="col-12 col-md-6 mb-3 d-flex">
         <div class="card">
           <div class="card-image">
             <img src="./assets/img/guia-nms.png" alt="Guía NMS 2020">
@@ -183,18 +188,18 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-4 mb-3 d-flex">
+      <div class="col-12 col-md-6 mb-3 d-flex">
         <div class="card">
           <div class="card-image">
             <img src="./assets/img/comer-en-bola.jpg" alt="Comer en bola">
           </div>
           <div class="card-body">
-            <div class="d-flex" style="margin-bottom: 15px;">
+            <div class="project-tag-container">
               <span class="project-tag" style="margin-right: 2px;">HTML</span>
               <span class="project-tag" style="margin-right: 2px;">CSS</span>
             </div>
             <p class="project-name">Vips | Comer en bola</p>
-            <p>
+            <p class="project-description">
               Landing de promoción "Comer en bola" para la marca Vips.
             </p>
           </div>
@@ -206,7 +211,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-4 mb-3 d-flex">
+      <div class="col-12 col-md-6 mb-3 d-flex">
         <div class="card">
           <div class="card-image">
             <img src="./assets/img/clasicos-a-diez.jpg" alt="Clásicos a diez">
@@ -218,7 +223,7 @@
               <span class="project-tag" style="margin-right: 2px;">JavaScript</span>
             </div>
             <p class="project-name">Vips | Clásicos a $10</p>
-            <p>
+            <p class="project-description">
               Landing de promoción "Clásicos a $10" para la marca Vips.
             </p>
           </div>
@@ -230,7 +235,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-4 mb-3 d-flex">
+      <div class="col-12 col-md-6 mb-3 d-flex">
         <div class="card">
           <div class="card-image">
             <img src="./assets/img/clasicos-85.png" alt="Clásico con bebida a 85">
@@ -241,8 +246,8 @@
               <span class="project-tag" style="margin-right: 2px;">CSS</span>
               <span class="project-tag" style="margin-right: 2px;">JavaScript</span>
             </div>
-            <p class="project-name">Vips | Clásico con bebida $85</p>
-            <p>
+            <p class="project-name">Vips | Clásico con bebida</p>
+            <p class="project-description">
               Landing de promoción para la marca Vips.
             </p>
           </div>
@@ -256,7 +261,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-4 mb-3 d-flex">
+      <div class="col-12 col-md-6 mb-3 d-flex">
         <div class="card">
           <div class="card-image">
             <img src="./assets/img/rosca-reyes.jpg" alt="Rosca de reyes">
@@ -268,7 +273,7 @@
               <span class="project-tag" style="margin-right: 2px;">JavaScript</span>
             </div>
             <p class="project-name">Vips | Rosca de reyes</p>
-            <p>
+            <p class="project-description">
               Landing de promoción "Rosca de Reyes" para la marca Vips.
             </p>
           </div>
@@ -280,7 +285,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-4 mb-3 d-flex">
+      <div class="col-12 col-md-6 mb-3 d-flex">
         <div class="card">
           <div class="card-image">
             <img src="./assets/img/casa-de-jengibre.png" alt="Casa de jengibre">
@@ -291,7 +296,7 @@
               <span class="project-tag" style="margin-right: 2px;">CSS</span>
             </div>
             <p class="project-name">Vips | Casa de jengibre</p>
-            <p>
+            <p class="project-description">
               Landing de promoción "Casa de jengibre" para la marca Vips.<br />
             </p>
           </div>
@@ -315,15 +320,11 @@
   </div>
 
   <!-- SCRIPTS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
+  <script src="./assets/vendor/jquery/jquery-3.5.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
+  <script src="./assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
