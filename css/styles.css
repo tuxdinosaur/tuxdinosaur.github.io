@@ -61,8 +61,8 @@ nav {
 }
 .nav__item {
   color: #333333;
-  font-size: 17px;
-  padding: 10px 20px;
+  font-size: 16px;
+  padding: 8px 15px;
   border: 2px solid #F7F7F7;
 }
 .nav__item:hover {
