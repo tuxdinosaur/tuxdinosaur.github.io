@@ -167,6 +167,13 @@ nav {
   border-bottom: 7px solid #C72B6C;
 }
 
+.row-project {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
 .card {
   border-radius: 0;
   border: none;
@@ -189,7 +196,7 @@ nav {
   font-size: 14px; 
   background: #C72B6C; 
   color: #ffffff; 
-  padding: 5px;
+  padding: 5px 8px;
   margin: 1px 2px 1px 0;
 }
 .project-name {
