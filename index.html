@@ -17,10 +17,9 @@
     <div class="row">
       <div class="col-12">
 
-        <nav class="d-flex justify-content-end align-items-center">
+        <nav>
           <a class="mr-2 nav__item" href="">Inicio</a>
-          <a class="mr-2 nav__item" href="#projects">Proyectos</a>
-          <!-- <a class="mr-0 nav__item mr-md-2" href="#contact">Contacto</a> -->
+          <a class="mr-0 mr-md-2 nav__item" href="#projects">Proyectos</a>
           <a class="nav__cv" href="./assets/docs/CV-ivantux-2021.pdf" download>
             Descargar CV
           </a>
@@ -48,7 +47,7 @@
           <p class="header__description--nuvo-2 m-0">
             Gusto por la tecnología, diseño, videojuegos, programación, ciencia ficción y compartir conocimiento.
           </p>
-          <a class="header__cv" href="./assets/docs/CV_ivantux.pdf" download>
+          <a class="header__cv" href="./assets/docs/CV-ivantux-2021.pdf" download>
             Descargar CV
           </a>
           <div class="mt-4 d-flex align-items-center justify-content-center">
@@ -81,41 +80,46 @@
     </div>
 
     <section class="row pt-4 mb-4" id="projects">
+
       <div class="col-12 mb-4">
-        <!-- <svg class="contact__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#6563ff" d="M19,6.5H16v-1a3,3,0,0,0-3-3H11a3,3,0,0,0-3,3v1H5a3,3,0,0,0-3,3v9a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3v-9A3,3,0,0,0,19,6.5Zm-9-1a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1v1H10Zm10,13a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V13a21.71,21.71,0,0,0,8,1.53A21.75,21.75,0,0,0,20,13Zm0-7.69a19.89,19.89,0,0,1-16,0V9.5a1,1,0,0,1,1-1H19a1,1,0,0,1,1,1Z"/></svg> -->
-        <h2 class="projects-title">
+        <h2 class="projects-title" style="display: flex; justify-content: flex-start; align-items: center;">
+          <svg class="contact__icon" style="margin-right: 10px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path fill="#333333"
+              d="M19,6.5H16v-1a3,3,0,0,0-3-3H11a3,3,0,0,0-3,3v1H5a3,3,0,0,0-3,3v9a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3v-9A3,3,0,0,0,19,6.5Zm-9-1a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1v1H10Zm10,13a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V13a21.71,21.71,0,0,0,8,1.53A21.75,21.75,0,0,0,20,13Zm0-7.69a19.89,19.89,0,0,1-16,0V9.5a1,1,0,0,1,1-1H19a1,1,0,0,1,1,1Z" />
+          </svg>
           Proyectos
         </h2>
       </div>
 
       <!-- PROYECTO HORIZONTAL 1 -->
-      <!--
       <div class="col-12 col-md-12 mb-3 d-flex">
-        <div class="row-project" style="background: #FFFFFF;">
+        <div class="row-project">
           <div class="col-12 col-md-6" style="padding: 20px">
             <img class="w-100" src="./assets/img/casa-del-comal.jpg" alt="La casa del comal">
           </div>
           <div class="col-12 col-md-6"
             style="padding: 20px; display: flex; justify-content: start; align-items: center;">
-            <div>
+            <div style="width: 100%;">
               <div class="project-tag-container">
                 <span class="project-tag">HTML</span>
                 <span class="project-tag">CSS</span>
                 <span class="project-tag">JavaScript</span>
                 <span class="project-tag">Bootstrap</span>
               </div>
-              <p class="project-name">
-                La casa del comal
-              </p>
-              <p class="project-description">
-                La Casa del Comal ofrece los platillos más icónicos a través de un concepto atractivo, dinámico y en
-                el que todos los bolsillos son bienvenidos.
-              </p>
+              <div>
+                <p class="project-name">
+                  La Casa del Comal
+                </p>
+                <p class="project-description">
+                  La Casa del Comal ofrece los platillos más icónicos a través de un concepto atractivo, dinámico y en
+                  el que todos los bolsillos son bienvenidos.
+                </p>
+              </div>
               <div class="project-button" style="margin-top: 20px;">
                 <a class="card-link d-flex align-items-center" href="https://lacasadelcomal.mx/" target="_blank"
                   style="padding: 5px 10px; font-weight: 600;" title="Ir al sitio">
                   Ir al sitio
-                  <svg style="margin-left: 10px;" width="8" height="12" class="arrow-link" viewBox="0 0 8 12"
+                  <svg class="arrow-link" style="margin-left: 10px;" width="8" height="12" viewBox="0 0 8 12"
                     fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M7.62117 5.19078L2.19101 0.338513C2.07195 0.231249 1.93031 0.146112 1.77424 0.0880123C1.61818 0.0299124 1.45078 0 1.28171 0C1.11265 0 0.945252 0.0299124 0.789187 0.0880123C0.633122 0.146112 0.491475 0.231249 0.372418 0.338513C0.133886 0.552931 0 0.842982 0 1.14532C0 1.44765 0.133886 1.7377 0.372418 1.95212L4.90609 6.00331L0.372418 10.0545C0.133886 10.2689 0 10.559 0 10.8613C0 11.1636 0.133886 11.4537 0.372418 11.6681C0.492086 11.7742 0.634008 11.8581 0.790045 11.915C0.946082 11.972 1.11317 12.0009 1.28171 12C1.45026 12.0009 1.61734 11.972 1.77338 11.915C1.92942 11.8581 2.07134 11.7742 2.19101 11.6681L7.62117 6.81583C7.74121 6.70945 7.83649 6.58288 7.90151 6.44342C7.96652 6.30396 8 6.15438 8 6.00331C8 5.85223 7.96652 5.70265 7.90151 5.5632C7.83649 5.42374 7.74121 5.29717 7.62117 5.19078Z" />
@@ -126,35 +130,33 @@
           </div>
         </div>
       </div>
-      -->
 
       <!-- PROYECTO HORIZONTAL 2 -->
-      <!--
       <div class="col-12 col-md-12 mb-3 d-flex">
-        <div class="row-project" style="background: #FFFFFF;">
+        <div class="row-project">
           <div class="col-12 col-md-6" style="padding: 20px">
             <img class="w-100" src="./assets/img/fabuloso-fred.jpg" alt="La casa del comal">
           </div>
           <div class="col-12 col-md-6"
             style="padding: 20px; display: flex; justify-content: start; align-items: center;">
-            <div>
+            <div style="width: 100%;">
               <div>
-                <p class="project-name">
-                  Fabuloso Fred
-                </p>
                 <div class="project-tag-container">
                   <span class="project-tag">HTML</span>
                   <span class="project-tag">CSS</span>
                   <span class="project-tag">JavaScript</span>
                   <span class="project-tag">Bootstrap</span>
                 </div>
+                <p class="project-name">
+                  Fabuloso Fred
+                </p>
                 <p class="project-description">
                   Proyecto personal. <br />
                   Versión web del juego "El Fabuloso Fred", minimalista e intuitivo.
                 </p>
               </div>
               <div class="project-button" style="margin-top: 20px;">
-                <a class="card-link d-flex align-items-center" href="https://lacasadelcomal.mx/" target="_blank"
+                <a class="card-link d-flex align-items-center" href="https://mkfuentes.github.io/fred/" target="_blank"
                   style="padding: 5px 10px; font-weight: 600;" title="Ir al sitio">
                   Ir al sitio
                   <svg style="margin-left: 10px;" width="8" height="12" class="arrow-link" viewBox="0 0 8 12"
@@ -168,109 +170,47 @@
           </div>
         </div>
       </div>
-      -->
 
-      <div class="col-12 col-md-6 mb-3 d-flex">
-        <div class="card">
-          <div class="card-image">
-            <img src="./assets/img/casa-del-comal.jpg" alt="La casa del comal">
+      <!-- PROYECTO HORIZONTAL 3 -->
+      <div class="col-12 col-md-12 mb-3 d-flex">
+        <div class="row-project">
+          <div class="col-12 col-md-6" style="padding: 20px">
+            <img class="w-100" src="./assets/img/comer-en-bola.jpg" alt="La casa del comal">
           </div>
-          <div class="card-body">
-            <div class="project-tag-container">
-              <span class="project-tag">HTML</span>
-              <span class="project-tag">CSS</span>
-              <span class="project-tag">JavaScript</span>
-              <span class="project-tag">Bootstrap</span>
-            </div>
-            <p class="project-name">La casa del comal</p>
-            <p class="project-description">
-              La Casa del Comal ofrece los platillos más icónicos a través de un concepto atractivo, dinámico y en el
-              que todos los bolsillos son bienvenidos.
-            </p>
-          </div>
-          <div class="card-footer d-flex justify-content-end align-items-center">
-            <div class="project-button">
-              <a class="card-link d-flex align-items-center" href="https://lacasadelcomal.mx/" target="_blank"
-                style="padding: 5px 10px; font-weight: 600;" title="Ir al sitio">
-                Ir al sitio
-                <svg style="margin-left: 10px;" width="8" height="12" class="arrow-link" viewBox="0 0 8 12" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M7.62117 5.19078L2.19101 0.338513C2.07195 0.231249 1.93031 0.146112 1.77424 0.0880123C1.61818 0.0299124 1.45078 0 1.28171 0C1.11265 0 0.945252 0.0299124 0.789187 0.0880123C0.633122 0.146112 0.491475 0.231249 0.372418 0.338513C0.133886 0.552931 0 0.842982 0 1.14532C0 1.44765 0.133886 1.7377 0.372418 1.95212L4.90609 6.00331L0.372418 10.0545C0.133886 10.2689 0 10.559 0 10.8613C0 11.1636 0.133886 11.4537 0.372418 11.6681C0.492086 11.7742 0.634008 11.8581 0.790045 11.915C0.946082 11.972 1.11317 12.0009 1.28171 12C1.45026 12.0009 1.61734 11.972 1.77338 11.915C1.92942 11.8581 2.07134 11.7742 2.19101 11.6681L7.62117 6.81583C7.74121 6.70945 7.83649 6.58288 7.90151 6.44342C7.96652 6.30396 8 6.15438 8 6.00331C8 5.85223 7.96652 5.70265 7.90151 5.5632C7.83649 5.42374 7.74121 5.29717 7.62117 5.19078Z" />
-                </svg>
-              </a>
+          <div class="col-12 col-md-6"
+            style="padding: 20px; display: flex; justify-content: start; align-items: center;">
+            <div style="width: 100%;">
+              <div>
+                <div class="project-tag-container">
+                  <span class="project-tag">HTML</span>
+                  <span class="project-tag">CSS</span>
+                  <span class="project-tag">JavaScript</span>
+                  <span class="project-tag">Bootstrap</span>
+                </div>
+                <p class="project-name">
+                  Landings Vips
+                </p>
+                <p class="project-description">
+                  Landings de promoción para la marca Vips.
+                </p>
+              </div>
+              <div class="project-button" style="margin-top: 20px;">
+                <a class="card-link d-flex align-items-center" href="./landings-vips.html"
+                  style="padding: 5px 10px; font-weight: 600;" title="Ir al sitio">
+                  Ver más
+                  <svg style="margin-left: 10px;" width="8" height="12" class="arrow-link" viewBox="0 0 8 12"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.62117 5.19078L2.19101 0.338513C2.07195 0.231249 1.93031 0.146112 1.77424 0.0880123C1.61818 0.0299124 1.45078 0 1.28171 0C1.11265 0 0.945252 0.0299124 0.789187 0.0880123C0.633122 0.146112 0.491475 0.231249 0.372418 0.338513C0.133886 0.552931 0 0.842982 0 1.14532C0 1.44765 0.133886 1.7377 0.372418 1.95212L4.90609 6.00331L0.372418 10.0545C0.133886 10.2689 0 10.559 0 10.8613C0 11.1636 0.133886 11.4537 0.372418 11.6681C0.492086 11.7742 0.634008 11.8581 0.790045 11.915C0.946082 11.972 1.11317 12.0009 1.28171 12C1.45026 12.0009 1.61734 11.972 1.77338 11.915C1.92942 11.8581 2.07134 11.7742 2.19101 11.6681L7.62117 6.81583C7.74121 6.70945 7.83649 6.58288 7.90151 6.44342C7.96652 6.30396 8 6.15438 8 6.00331C8 5.85223 7.96652 5.70265 7.90151 5.5632C7.83649 5.42374 7.74121 5.29717 7.62117 5.19078Z" />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="col-12 col-md-6 mb-3 d-flex">
-        <div class="card">
-          <div class="card-image">
-            <img src="./assets/img/fabuloso-fred.jpg" alt="Fabuloso Fred">
-          </div>
-          <div class="card-body">
-            <div class="d-flex" style="margin-bottom: 15px;">
-              <span class="project-tag">HTML</span>
-              <span class="project-tag">CSS</span>
-              <span class="project-tag">JavaScript</span>
-              <span class="project-tag">Bootstrap</span>
-            </div>
-            <p class="project-name">Fabuloso Fred</p>
-            <p class="project-description">
-              Proyecto personal.<br />
-              Versión web del juego "El Fabuloso Fred", minimalista e intuitivo.
-            </p>
-          </div>
-          <div class="card-footer">
-            <div class="project-button">
-              <a class="card-link d-flex align-items-center" href="https://mkfuentes.github.io/fred/" target="_blank"
-                style="padding: 5px 10px; font-weight: 600;" title="Ir al sitio">
-                Ir al sitio
-                <svg style="margin-left: 10px;" width="8" height="12" class="arrow-link" viewBox="0 0 8 12" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M7.62117 5.19078L2.19101 0.338513C2.07195 0.231249 1.93031 0.146112 1.77424 0.0880123C1.61818 0.0299124 1.45078 0 1.28171 0C1.11265 0 0.945252 0.0299124 0.789187 0.0880123C0.633122 0.146112 0.491475 0.231249 0.372418 0.338513C0.133886 0.552931 0 0.842982 0 1.14532C0 1.44765 0.133886 1.7377 0.372418 1.95212L4.90609 6.00331L0.372418 10.0545C0.133886 10.2689 0 10.559 0 10.8613C0 11.1636 0.133886 11.4537 0.372418 11.6681C0.492086 11.7742 0.634008 11.8581 0.790045 11.915C0.946082 11.972 1.11317 12.0009 1.28171 12C1.45026 12.0009 1.61734 11.972 1.77338 11.915C1.92942 11.8581 2.07134 11.7742 2.19101 11.6681L7.62117 6.81583C7.74121 6.70945 7.83649 6.58288 7.90151 6.44342C7.96652 6.30396 8 6.15438 8 6.00331C8 5.85223 7.96652 5.70265 7.90151 5.5632C7.83649 5.42374 7.74121 5.29717 7.62117 5.19078Z" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6 mb-3 d-flex">
-        <div class="card">
-          <div class="card-image">
-            <img src="./assets/img/guia-nms.png" alt="Guía NMS 2020">
-          </div>
-          <div class="card-body">
-            <div class="d-flex" style="margin-bottom: 15px;">
-              <span class="project-tag">HTML</span>
-              <span class="project-tag">CSS</span>
-              <span class="project-tag">Bootstrap</span>
-            </div>
-            <p class="project-name">Guía NMS 2020</p>
-            <p class="project-description">
-              Proyecto personal.<br />
-              Concepto de aplicación para estudiar la guía de NMS para el IPN.
-            </p>
-          </div>
-          <div class="card-footer">
-            <div class="project-button">
-              <a class="card-link d-flex align-items-center" href="https://tuxdinosaur.github.io/guia-nms-2020/"
-                target="_blank" style="padding: 5px 10px; font-weight: 600;" title="Ir al sitio">
-                Ir al sitio
-                <svg style="margin-left: 10px;" width="8" height="12" class="arrow-link" viewBox="0 0 8 12" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M7.62117 5.19078L2.19101 0.338513C2.07195 0.231249 1.93031 0.146112 1.77424 0.0880123C1.61818 0.0299124 1.45078 0 1.28171 0C1.11265 0 0.945252 0.0299124 0.789187 0.0880123C0.633122 0.146112 0.491475 0.231249 0.372418 0.338513C0.133886 0.552931 0 0.842982 0 1.14532C0 1.44765 0.133886 1.7377 0.372418 1.95212L4.90609 6.00331L0.372418 10.0545C0.133886 10.2689 0 10.559 0 10.8613C0 11.1636 0.133886 11.4537 0.372418 11.6681C0.492086 11.7742 0.634008 11.8581 0.790045 11.915C0.946082 11.972 1.11317 12.0009 1.28171 12C1.45026 12.0009 1.61734 11.972 1.77338 11.915C1.92942 11.8581 2.07134 11.7742 2.19101 11.6681L7.62117 6.81583C7.74121 6.70945 7.83649 6.58288 7.90151 6.44342C7.96652 6.30396 8 6.15438 8 6.00331C8 5.85223 7.96652 5.70265 7.90151 5.5632C7.83649 5.42374 7.74121 5.29717 7.62117 5.19078Z" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <!--
       <div class="col-12 col-md-6 mb-3 d-flex">
         <div class="card">
           <div class="card-image">
@@ -286,11 +226,6 @@
               Landing de promoción "Comer en bola" para la marca Vips.
             </p>
           </div>
-          <!-- 
-          <div class="card-footer">
-            <a class="card-link" href="#" target="_blank">Ver más</a>
-          </div>
-          -->
         </div>
       </div>
 
@@ -310,11 +245,6 @@
               Landing de promoción "Clásicos a $10" para la marca Vips.
             </p>
           </div>
-          <!-- 
-          <div class="card-footer">
-            <a class="card-link" href="#" target="_blank">Ver más</a>
-          </div>
-          -->
         </div>
       </div>
 
@@ -334,13 +264,11 @@
               Landing de promoción para la marca Vips.
             </p>
           </div>
-          <!-- 
           <div class="card-footer">
             <div class="project-button">
               <a class="card-link button--magenta" href="https://tuxdinosaur.github.io/clasicoBebida85/" target="_blank">Ver más</a>
             </div>
           </div>
-          -->
         </div>
       </div>
 
@@ -360,11 +288,6 @@
               Landing de promoción "Rosca de Reyes" para la marca Vips.
             </p>
           </div>
-          <!-- 
-          <div class="card-footer">
-            <a class="card-link" href="#" target="_blank">Ver más</a>
-          </div>
-          -->
         </div>
       </div>
 
@@ -383,14 +306,117 @@
               Landing de promoción "Casa de jengibre" para la marca Vips.<br />
             </p>
           </div>
-          <!-- 
-          <div class="card-footer">
-            <a class="card-link" href="#" target="_blank">Ver más</a>
-          </div>
-          -->
         </div>
       </div>
+      -->
     </section>
+
+    <!-- 
+    <div class="col-12 col-md-6 mb-3 d-flex">
+      <div class="card">
+        <div class="card-image">
+          <img src="./assets/img/casa-del-comal.jpg" alt="La casa del comal">
+        </div>
+        <div class="card-body">
+          <div class="project-tag-container">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">Bootstrap</span>
+          </div>
+          <p class="project-name">La casa del comal</p>
+          <p class="project-description">
+            La Casa del Comal ofrece los platillos más icónicos a través de un concepto atractivo, dinámico y en el
+            que todos los bolsillos son bienvenidos.
+          </p>
+        </div>
+        <div class="card-footer d-flex justify-content-end align-items-center">
+          <div class="project-button">
+            <a class="card-link d-flex align-items-center" href="https://lacasadelcomal.mx/" target="_blank"
+              style="padding: 5px 10px; font-weight: 600;" title="Ir al sitio">
+              Ir al sitio
+              <svg style="margin-left: 10px;" width="8" height="12" class="arrow-link" viewBox="0 0 8 12" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.62117 5.19078L2.19101 0.338513C2.07195 0.231249 1.93031 0.146112 1.77424 0.0880123C1.61818 0.0299124 1.45078 0 1.28171 0C1.11265 0 0.945252 0.0299124 0.789187 0.0880123C0.633122 0.146112 0.491475 0.231249 0.372418 0.338513C0.133886 0.552931 0 0.842982 0 1.14532C0 1.44765 0.133886 1.7377 0.372418 1.95212L4.90609 6.00331L0.372418 10.0545C0.133886 10.2689 0 10.559 0 10.8613C0 11.1636 0.133886 11.4537 0.372418 11.6681C0.492086 11.7742 0.634008 11.8581 0.790045 11.915C0.946082 11.972 1.11317 12.0009 1.28171 12C1.45026 12.0009 1.61734 11.972 1.77338 11.915C1.92942 11.8581 2.07134 11.7742 2.19101 11.6681L7.62117 6.81583C7.74121 6.70945 7.83649 6.58288 7.90151 6.44342C7.96652 6.30396 8 6.15438 8 6.00331C8 5.85223 7.96652 5.70265 7.90151 5.5632C7.83649 5.42374 7.74121 5.29717 7.62117 5.19078Z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    -->
+
+    <!--
+    <div class="col-12 col-md-6 mb-3 d-flex">
+      <div class="card">
+        <div class="card-image">
+          <img src="./assets/img/fabuloso-fred.jpg" alt="Fabuloso Fred">
+        </div>
+        <div class="card-body">
+          <div class="d-flex" style="margin-bottom: 15px;">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">Bootstrap</span>
+          </div>
+          <p class="project-name">Fabuloso Fred</p>
+          <p class="project-description">
+            Proyecto personal.<br />
+            Versión web del juego "El Fabuloso Fred", minimalista e intuitivo.
+          </p>
+        </div>
+        <div class="card-footer">
+          <div class="project-button">
+            <a class="card-link d-flex align-items-center" href="https://mkfuentes.github.io/fred/" target="_blank"
+              style="padding: 5px 10px; font-weight: 600;" title="Ir al sitio">
+              Ir al sitio
+              <svg style="margin-left: 10px;" width="8" height="12" class="arrow-link" viewBox="0 0 8 12" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.62117 5.19078L2.19101 0.338513C2.07195 0.231249 1.93031 0.146112 1.77424 0.0880123C1.61818 0.0299124 1.45078 0 1.28171 0C1.11265 0 0.945252 0.0299124 0.789187 0.0880123C0.633122 0.146112 0.491475 0.231249 0.372418 0.338513C0.133886 0.552931 0 0.842982 0 1.14532C0 1.44765 0.133886 1.7377 0.372418 1.95212L4.90609 6.00331L0.372418 10.0545C0.133886 10.2689 0 10.559 0 10.8613C0 11.1636 0.133886 11.4537 0.372418 11.6681C0.492086 11.7742 0.634008 11.8581 0.790045 11.915C0.946082 11.972 1.11317 12.0009 1.28171 12C1.45026 12.0009 1.61734 11.972 1.77338 11.915C1.92942 11.8581 2.07134 11.7742 2.19101 11.6681L7.62117 6.81583C7.74121 6.70945 7.83649 6.58288 7.90151 6.44342C7.96652 6.30396 8 6.15438 8 6.00331C8 5.85223 7.96652 5.70265 7.90151 5.5632C7.83649 5.42374 7.74121 5.29717 7.62117 5.19078Z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    -->
+
+    <!--
+    <div class="col-12 col-md-6 mb-3 d-flex">
+      <div class="card">
+        <div class="card-image">
+          <img src="./assets/img/guia-nms.png" alt="Guía NMS 2020">
+        </div>
+        <div class="card-body">
+          <div class="d-flex" style="margin-bottom: 15px;">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">Bootstrap</span>
+          </div>
+          <p class="project-name">Guía NMS 2020</p>
+          <p class="project-description">
+            Proyecto personal.<br />
+            Concepto de aplicación para estudiar la guía de NMS para el IPN.
+          </p>
+        </div>
+        <div class="card-footer">
+          <div class="project-button">
+            <a class="card-link d-flex align-items-center" href="https://tuxdinosaur.github.io/guia-nms-2020/"
+              target="_blank" style="padding: 5px 10px; font-weight: 600;" title="Ir al sitio">
+              Ir al sitio
+              <svg style="margin-left: 10px;" width="8" height="12" class="arrow-link" viewBox="0 0 8 12" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.62117 5.19078L2.19101 0.338513C2.07195 0.231249 1.93031 0.146112 1.77424 0.0880123C1.61818 0.0299124 1.45078 0 1.28171 0C1.11265 0 0.945252 0.0299124 0.789187 0.0880123C0.633122 0.146112 0.491475 0.231249 0.372418 0.338513C0.133886 0.552931 0 0.842982 0 1.14532C0 1.44765 0.133886 1.7377 0.372418 1.95212L4.90609 6.00331L0.372418 10.0545C0.133886 10.2689 0 10.559 0 10.8613C0 11.1636 0.133886 11.4537 0.372418 11.6681C0.492086 11.7742 0.634008 11.8581 0.790045 11.915C0.946082 11.972 1.11317 12.0009 1.28171 12C1.45026 12.0009 1.61734 11.972 1.77338 11.915C1.92942 11.8581 2.07134 11.7742 2.19101 11.6681L7.62117 6.81583C7.74121 6.70945 7.83649 6.58288 7.90151 6.44342C7.96652 6.30396 8 6.15438 8 6.00331C8 5.85223 7.96652 5.70265 7.90151 5.5632C7.83649 5.42374 7.74121 5.29717 7.62117 5.19078Z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    -->
 
     <!-- FOOTER -->
     <footer class="row">
@@ -408,6 +434,7 @@
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
   <script src="./assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./js/app.js"></script>
 </body>
 
 </html>
