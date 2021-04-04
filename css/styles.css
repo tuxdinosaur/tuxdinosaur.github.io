@@ -90,6 +90,18 @@ a.nav__item:hover span {
   text-decoration: none;
 }
 
+.back_404 {
+  border: 2px solid #B6244F;
+  padding: 6px 12px;
+  border-radius: 0;
+  transition: 0.25s ease-out;
+}
+.back_404:hover {
+  background: #B6244F;
+  color: #fff;
+  text-decoration: none;
+}
+
 /* HEADER */
 .header {
   display: flex;
